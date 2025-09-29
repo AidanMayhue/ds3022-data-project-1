@@ -1,0 +1,11 @@
+
+    
+    
+    truncate table "emissions"."main"."vehicle_emissions";
+    -- dbt seed --
+    
+          COPY "emissions"."main"."vehicle_emissions" FROM '/Users/aidanmayhue/Desktop/datascience/data_engineering/TEST-ds3022-dp1/dbt/seeds/vehicle_emissions.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        
+
+;
+  
