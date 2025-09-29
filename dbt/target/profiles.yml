@@ -1,0 +1,10 @@
+taxi_co2:
+ target: dev
+ outputs:
+   dev:
+     type: duckdb
+     path: ../emissions.duckdb # absolute path to the project's duckdb file
+     schema: main
+     threads: 4
+     keepalives_idle: 0
+     search_path: main
